@@ -6,7 +6,8 @@ serversocket.listen(5) # become a server socket, maximum 5 connections
 
 while True:
     connection, address = serversocket.accept()
-    buf = connection.recv(64)
+    buf = connection.recv(1024)
     if len(buf) > 0:
         print(buf)
-    break
+
+    # break
