@@ -10,8 +10,8 @@ cursor = connection.cursor()
 # создание новой таблицы
 #cursor.execute("CREATE TABLE students (name TEXT, age INTEGER, phone TEXT, email TEXT)")
 # добавление данных
-#cursor.execute("INSERT INTO students VALUES ('Zebo', 21, 93123123,'zebo@univer.tj')")
-#cursor.execute("INSERT INTO students VALUES ('Сухроб', 22, 98012345,'suhrob@univer.tj')")
+#cursor.execute("INSERT INTO students VALUES ('Zebo', 21, '93123123','zebo@univer.tj')")
+#cursor.execute("INSERT INTO students VALUES ('Сухроб', 22, '98012345','suhrob@univer.tj')")
 # получение данных
 rows = cursor.execute("SELECT name, phone, email FROM students").fetchall()
 print('~'*30)
@@ -25,4 +25,4 @@ rows = cursor.execute(
 ).fetchall()
 print(rows)
 print('~'*30)
-#connection.commit()
+connection.commit()
