@@ -86,3 +86,8 @@ print(p1.age)
 
 # p1 = Person("John", 36)
 # p1.myfunc()
+
+import datetime
+
+x = datetime.datetime.now()
+print(x)
